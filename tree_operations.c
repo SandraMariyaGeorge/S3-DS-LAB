@@ -1,21 +1,25 @@
 #include<stdio.h>
+#define maxsize 20
 void inserttree(int a[],int nvalue);
 void deletetree(int a[],int nvalue);
 void displaytree();
-int root_val,i,a[50],lval,rval,nvalue,x,maxsize;
-char choice,ch;
+int root_val,i,a[50],lval,rval,nvalue,x,choice,op;
+char ch;
 int searchtree(int a[],int i,int key);
 void main()
 {
-    printf("Enter your choice\n1--Insert\t2--Delete\n");
-    scanf("%d",&choice);
     //initialising the values to -1
     for(i=0;i<50;i++)
     {
         a[i]=-1;
     }
-    switch(choice)
+    do
     {
+        i=1;
+        printf("Enter your choice\n1--Insert\t2--Delete\t3--Display\n");
+        scanf("%d",&choice);
+        switch(choice)
+        {
         case 1:
         printf("Enter the node value to which we need to insert\n");
         scanf("%d",&nvalue);
@@ -30,33 +34,78 @@ void main()
         break;
         default:printf("Invalid choice\n");
     }
+    printf("Do you want to continue\t1--YES\t2--NO\n");
+    scanf("%d",&op);
+    }while(op==1);
 }
 void inserttree(int a[],int nvalue)
 {
-    i=searchtree(a,i,nvalue);
-    if (i=0)
+    i=searchtree(a,1,nvalue);
+    if(i==0)
     {
         printf("Node Doesn't exist,Insertion not possible\n");
     }
     else
     {
-        printf("Do you want to create a left child or a right child(l/r)");
-        scanf("%d",&ch);
-        if(ch=='l')
+        if(a[0]==-1)
         {
-            printf("Enter the left child value..");
-            scanf("%d",&lval);
+            printf("Enter the root node\n");
+            scanf("%d",&root_val);
+            a[0]=root_val;
         }
-        if(ch=='r')
+        else
         {
-            printf("");
-            scanf("");   
+            printf("Do you want to create a left child or a right child(l/r)\n");
+            fflush(stdin);
+            scanf("%c",&ch);
+            if(ch=='l'||ch=='L')
+            {
+                printf("Enter the left child value..\n");
+                scanf("%d",&lval);
+                if(a[2*i-1]==-1)
+                {
+                    a[2*i-1]=lval;
+                }
+                else
+                {
+                    printf("Insertion not possible\n");
+                }
+            }
+            if(ch=='r'||ch=='R')
+            {
+                printf("Enter the right child value..\n");
+                fflush(stdin);
+                scanf("%d",&rval);
+                if(a[2*i+1-1]==-1)
+                {
+                    a[2*i+1-1]=rval;
+                }
+                else
+                {   
+                    printf("Insertion not possible\n");
+                }
+            }
         }
     }
 }
 void deletetree(int a[],int nvalue)
 {
-
+    i=searchtree(a,1,nvalue);
+    if(i==0)
+    {
+        printf("Node Doesn't exist,Deletion not possible\n");
+    }
+    else
+    {
+        if((a[2*i-1]==-1)&&a[2*i+1-1]==-1)
+        {
+            a[i-1]=-1;
+        }
+        else
+        {
+            printf("Deletion not possible,it has child nodes\n");
+        }
+    }
 }
 void displaytree()
 {
@@ -72,7 +121,7 @@ void displaytree()
 }
 int searchtree(int a[],int i,int key)
 {
-    if (a[i]==key)
+    if (a[i-1]==key)
         return i;
     else
     {
