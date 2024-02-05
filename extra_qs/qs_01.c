@@ -17,19 +17,22 @@ int main()
     int ch, val, k1, k2;
     do
     {
-        printf("enter your choice\n1--insert\t2--display values within range\t3--Exit\n");
+        printf("Enter your choice\n1--Insert\t2--Display values within range\t3--Exit\n");
         scanf("%d", &ch);
         switch (ch)
         {
         case 1:
-            printf("enter value\n");
+            printf("Enter value\n");
             scanf("%d", &val);
             insertbst(val);
             break;
         case 2:
-            printf("enter the values for k1 and k2\n");
+            printf("Enter the values for k1 and k2\n");
             scanf("%d%d", &k1, &k2);
             displayrange(root, k1, k2);
+            printf("\n");
+            break;
+        case 3:
             break;
         default:
             printf("invalid");
@@ -73,5 +76,17 @@ void inorder(struct node *ptr)
         inorder(ptr->lptr);
         printf("%d ", ptr->data);
         inorder(ptr->rptr);
+    }
+}
+void displayrange(struct node *ptr, int k1, int k2)
+{
+    if (ptr == NULL)
+        return;
+    else
+    {
+        displayrange(ptr->lptr,k1,k2);
+        if(ptr->data>=k1 && ptr->data<=k2)
+            printf("%d ", ptr->data);
+        displayrange(ptr->rptr,k1,k2);
     }
 }
