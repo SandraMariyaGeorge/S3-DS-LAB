@@ -1,4 +1,4 @@
-// find smllest element and largest element in an bst
+// find height of the tree
 #include <stdio.h>
 #include <stdlib.h>
 struct node
