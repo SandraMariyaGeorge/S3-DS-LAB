@@ -73,6 +73,7 @@ Write the program
 
 20.Write an algorithm and program to count the number of nodes in a given
 circular doubly linked list
+
 21.Write an algorithm and program to find the number of even and odd numbers in
 a given linked list
 

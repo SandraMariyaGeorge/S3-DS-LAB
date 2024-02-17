@@ -1,3 +1,5 @@
+//Write an algorithm and program to concatenate two linear linked lists
+
 #include<stdio.h>
 #include<stdlib.h>
 struct node
