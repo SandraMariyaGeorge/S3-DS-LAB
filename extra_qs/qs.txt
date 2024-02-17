@@ -1,0 +1,242 @@
+
+QUESTIONS
+
+1.Write an algorithm and program that displays all the elements X in a binary
+search tree such that k1 <= x <= k2 where k1 and k2 are two values supplied
+
+2.Write a non recursive algorithm and program to find the preorder traversal of a
+binary tree.
+
+3.Write an algorithm and program to enter an integer and to reverse the digits of
+the integer using suitable data structure
+
+4.Write an algorithm and program to swap first and last nodes of a linked list
+(interchange only pointers)
+
+5.Write an algorithm and program to create a priority queue using linked list.
+Store element and priority value. Assume square root of entered number as its
+priority value. Insert and delete the elements.
+
+6.Write an algorithm and a program to remove all occurrences of element x from
+list L
+
+7.Devise an algorithm for determining whether the two binary trees T1 and T2 are
+similar or not. Out of these two trees T1 is represented with linked storage
+representation and T2 is represented with sequential storage representation.
+Write also the program.
+
+8.Suppose a binary tree is represented in memory(Using linked structure) Write a
+recursive procedure which finds the number of nodes, number of edges and
+height of the tree. Write also the program .
+
+9.Write an algorithm and program to delete repeated elements from a singly
+linked list
+
+10.A binary tree is given with the sequential storage representation. Write an
+algorithm and program to copy the binary tree into linked storage
+representation.
+
+11.Suppose the array to be sorted (into alphabetical order) by Heapsort initially
+contains the following sequence of letters E,X,A,M,P,L,E. Show how they
+would be arranged in the array after the heap construction phase. Also show
+how the heap sort is done in this array. Explain in detail with the help of
+diagram. Write the algorithm & program for heapsort
+
+12.Apply quick sort to sort the list P,O,L,Y,N,O,M,I,A,L in alphabetical order.
+Explain in detail every step. Write the algorithm & program for quicksort
+
+13.Write an algorithm and program to find the minimum & maximum elements
+from a non empty binary search tree.
+
+14.Write an algorithm and program to count the
+Number of nodes with degree 2
+Number of nodes with degree 1
+Number of nodes with degree 0
+Assume that a binary tree is represented with linked storage representation.
+
+15.Write an algorithm and program that checks whether a given binary tree is a
+binary search tree or not
+
+16.Apply merge sort to sort the list P,O,L,Y,N,O,M,I,A,L in alphabetical order.
+Explain in detail every step. Write the algorithm & program for merge sort
+
+17.Write an algorithm and a program to insert an element into a linked list in which
+elements are stored in ascending order
+
+18.Write an algorithm and program to find the predecessor of a given node in a
+singly linked list.
+
+19.Devise an algorithm for determining whether the two binary trees T1 and T2 are
+similar or not. Out of these two trees T1 is represented with linked storage
+representation and T2 is represented with sequential storage representation.
+Write the program
+
+20.Write an algorithm and program to count the number of nodes in a given
+circular doubly linked list
+21.Write an algorithm and program to find the number of even and odd numbers in
+a given linked list
+
+22.Create a singly linked list with a set of data. Then for any input K, split the list
+into three lists LIST1, LIST2 and LIST3 such that the elements in LIST1 is less
+than the value K, the elements in LIST2 is equal to the value K and the elements
+in LIST3 is greater than the value K. Write an algorithm and program.
+
+23.Write a non recursive algorithm and program to find the preorder traversal of a
+binary tree.
+
+24.Write an algorithm and program to print all ancestors of a particular node in a
+binary tree
+
+25.Write an algorithm and program to concatenate two linear linked lists
+
+26.Write a non-recursive algorithm and program which will return and remove the
+maximum element from a binary search tree.
+
+27.A binary tree is given with the sequential storage representation. Write an
+algorithm and program to copy the binary tree into linked storage
+representation.
+
+28.Given a doubly linked list , write an algorithm and program that removes a node
+with a particular value from the list and inserts it in the front
+
+29.Write an algorithm and program to print the middle node’s value in a singly
+linked list.
+
+30.Write a program to find successor of the given element in a linked list
+
+31.Write a non recursive algorithm and program to find the inorder traversal of a
+binary tree.
+
+32.There are two linear lists L1 and L2. Find L1  L2 ( means the common
+elements in L1 and L2) into a new list called L3. Write the algorithm and
+program.
+
+33.Suppose the array to be sorted (into alphabetical order) by Heapsort initially
+contains the following sequence of letters T,R,A,V,E,R,S,A,L. Show how they
+would be arranged in the array after the heap construction phase. Also show
+how the heap sort is done in this array. Explain in detail with the help of
+diagram. Write the algorithm & program for heapsort
+
+34.Suppose a binary search tree T is in memory. Write an algorithm and program
+which counts and deletes all the leafs in T
+
+35.Apply quick sort to sort the list S, O, R, T, I, N, G. in alphabetical order.
+Explain in detail every step. Write the algorithm & program for quicksort
+
+36.Write an algorithm and program to spilt a linked list into two lists, in such a
+manner that the first linked list contains the odd numbered nodes & second
+linked list contains the even numbered nodes.
+
+37.A palindrome is some word/line that reads the same forwards or backwards.
+Given a linked list of words, write an algorithm and program to create a
+palindrome list from it by concatenating its reverse list to the given list
+
+38.Write a non-recursive algorithm and program which will return and remove the
+minimum element from a binary search tree.
+
+39.Write a non recursive algorithm and program to find the postorder traversal of a
+binary tree.
+
+40.Let LIST be a linked list in memory. Write an algorithm and program which 
+i)Finds the number of times a given item occurs in LIST 
+ii)Finds the number of non zero elements in LIST 
+iii) Adds a given value K to each element in LIST
+
+41.Write an algorithm and program that test for balanced bracket pairs. The input
+strings all consisting of a single line less than 80 characters long will include
+four types of brackets.
+{ }, [ ], < >, ( ).For an expression to be parenthesized properly each left
+bracket must be matched with a right bracket of the same type
+for eg. {A [ B <C> <D> (E)]} is correct.
+ { A [ B }] is not correct.
+
+42.Suppose the array to be sorted (into alphabetical order) by Heapsort initially
+contains the following sequence of letters C,O,M,P,L,E,X,I,T,Y. Show how
+they would be arranged in the array after the heap construction phase. Also
+show how the heap sort is done in this array. Explain in detail with the help of
+diagram. Write the algorithm & program for heapsort
+
+43.Write an algorithm and program that reverses all the elements in a queue using
+stack
+
+44.Write an algorithm and program which interchanges the Kth and K+1 th elements
+in the list without interchanging any values, interchange only pointers
+
+45.Given single circular linked list containing a set of data. Obtain the following
+from this data structure
+i)Reverse the direction of links
+ii)For given two elements in the list, find the distance(that is, the number of
+nodes) between the two. Write an algorithm and program .
+
+46.Write an algorithm and program to create a singly linked list and split it at the
+middle and make the second half as the first and vice-versa. Display the final
+list
+
+47.Suppose FIRST and SECOND are sorted singly linked lists with distinct
+elements. Write an algorithm and program which combines the lists into a
+single sorted linked list by changing the pointers.
+
+48.Apply quick sort to sort the list T,R,A,V,E,R,S,A,L in alphabetical order.
+Explain in detail every step. Write the algorithm & program for quicksort
+
+49.Write an algorithm and a program to delete the first node from a singly linked
+list L
+
+50.Apply merge sort to sort the list T,R,A,V,E,R,S,A,L in alphabetical order.
+Explain in detail every step. Write the algorithm & program for merge sort
+
+51.Write an algorithm and a program to remove all occurrences of element x from
+list L
+
+52.Suppose a binary tree is represented in memory(Using linked structure) Write a
+recursive procedure which finds the number of nodes, number of edges and
+height of the tree. Write also the program .
+
+53.Write a non recursive algorithm and program to find the postorder traversal of a
+binary tree.
+
+54.Write an algorithm and program to create a priority queue using linked list.
+Store element and priority value. Assume square root of entered number as its
+priority value. Insert and delete the elements.
+
+55.Write an algorithm and program to print all ancestors of a particular node in a
+binary tree
+
+56.Suppose a binary search tree T is in memory. Write an algorithm and program
+which counts and deletes all the leafs in T
+
+57.Write an algorithm and program to count the number of nodes in a given
+circular doubly linked list
+
+58.Write an algorithm and program to find the minimum and maximum value from
+a binary search tree
+
+59.A binary tree is given with the sequential storage representation. Write an
+algorithm and program to copy the binary tree into linked storage
+representation.
+
+60.There are two linear lists L1 and L2. Find L1 U L2 (means all elements in L1
+and L2) into a new list called L3. Then make L3 as a sorted list. Write the
+algorithm and program.
+
+61.Write an algorithm and program to find the predecessor of a given node in a
+singly linked list.
+
+62.Write an algorithm and a program to delete the last node from a doubly linked
+list L
+
+63.Write an algorithm and a program to sort a singly linked list L
+
+64.Write an algorithm and program to insert a node at a specific position in a
+doubly linked list
+
+65.Write an algorithm and program to find the minimum and maximum value from
+the linked list
+
+66.Write an algorithm and program to delete a particular value from a doubly
+linked list
+
+67.Write an algorithm and program to count the number of nodes a linked list
+
+68.Write an algorithm and program to add a value K to all nodes data in a linked
+list
