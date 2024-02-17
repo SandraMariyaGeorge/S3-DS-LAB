@@ -8,7 +8,7 @@ struct node
     int data;
     struct node *lptr, *rptr;
 } *root, *new, *ptr, *parent, *s[50];
-int top = -1,c=1;
+int top = -1, c = 1;
 void insertbst(int item);
 void inorderNonRecursive(struct node *ptr);
 void inorder(struct node *ptr);
@@ -86,8 +86,8 @@ void inorder(struct node *ptr)
 }
 void inorderNonRecursive(struct node *ptr)
 {
-    
-    while (c!=0)
+
+    while (c != 0)
     {
         if (ptr != NULL)
         {
@@ -103,7 +103,7 @@ void inorderNonRecursive(struct node *ptr)
                 ptr = ptr->rptr;
             }
             else
-                c=0;
+                c = 0;
         }
     }
     printf("\n");
